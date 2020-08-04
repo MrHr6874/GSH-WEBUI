@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Medical Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!--===============================================================================================-->	
+<link rel="icon" type="image/png" href="../../images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="../../vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../css/util.css">
+	<link rel="stylesheet" type="text/css" href="../../css/main.css">
+<!--===============================================================================================-->
+
+<!--FIll up form style and script-->
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <style>
+    
+    body{
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+
+    }
+    #particles-js{
+      height: 25%;
+      background: #1c0357;
+    }
+    .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+
+   text-align: center;
+}
+
+button{
+  font-family: Montserrat-Bold;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #fff;
+  text-transform: uppercase;
+  
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+button:hover{
+  background: #262626;
+}
+/*Profile pic*/
+.profile-header-container{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.profile-header-img {
+  padding: 54px;
+}
+
+.profile-header-img > img.img-circle {
+  width: 120px;
+  height: 120px;
+  border: 2px solid #51D2B7;
+}
+
+.profile-header {
+  margin-top: 43px;
+}
+
+/**
+* Ranking component
+*/
+.rank-label-container {
+  margin-top: -19px;
+  /* z-index: 1000; */
+  text-align: center;
+}
+
+.label.label-default.rank-label {
+  background-color: rgb(81, 210, 183);
+  padding: 5px 10px 5px 10px;
+  border-radius: 27px;
+}
+/*END*/
+div{
+  color: aliceblue;
+}
+
+.block {
+    height: 2000px;
+}
+.header img {
+    width: 100%;
+}
+.footer-nav {
+    position: fixed;
+    z-index: 99999;
+    bottom: 0;
+    display: none;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+.show, .footer-nav:hover {
+    display: block;
+}
+  </style>
+</head>
+<body id="particles-js">
+  <div id="particles-js"></div>
+  <script type="text/javascript" src="../../js/main.js"></script>
+  <script type="text/javascript" src="../../particles.js"></script>
+  <script type="text/javascript" src="../../app.js"></script>
+  <h2 style="color: aliceblue;text-align: center;">Patient's Profile</h2><br>
+  <div class="limiter">
+  <div class="container-login100">
+     <div class="wrap-login100">
+    <div class="col-xs-12" style="justify-content: left;"></div>
+        <div class="login100-pic js-tilt" data-tilt>
+           <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12"></div>
+          <div class="profile-header-container">   
+          <div class="profile-header-img">
+                  <img class="img-circle" src="../../images/Profile (2).png" />
+                  <!-- badge -->
+              </div>
+          </div> 
+    </div>
+        </div>
+      </div>
+      <div class="col">
+         <div style="color: black;" >First Name: </div><br>
+         <div style="color: black;">Last Name:</div><br>
+       
+         <div style="color: black;" >Contact No:</div><br>
+         <div style="color: black;">Address: </div>
+       </div>    
+      </div>
+      </div>
+      </div>
+
+
+      
+
+    
+    
+
+  <div class="container-fluid">
+   <h2 style="color: aliceblue;text-align: center;">Patient's History</h2><br>
+     <div class="row">
+     <div class="col-4 " style="color: aliceblue;text-align: center;">CASE<br>
+       <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action">CS101</a>
+          <a href="#" class="list-group-item list-group-item-action">CS102</a>
+          <a href="#" class="list-group-item list-group-item-action">CS103</a>
+          <a href="#" class="list-group-item list-group-item-action">CS101</a>
+          <a href="#" class="list-group-item list-group-item-action">CS102</a>
+          <a href="#" class="list-group-item list-group-item-action">CS103</a>
+         </div>
+    </div>
+     <div class="col-4" style="color: aliceblue;text-align: center;">REPORT<br>
+       <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action">LB101</a>
+          <a href="#" class="list-group-item list-group-item-action">LB102</a>
+          <a href="#" class="list-group-item list-group-item-action">LB103</a>
+          <a href="#" class="list-group-item list-group-item-action">LB101</a>
+          <a href="#" class="list-group-item list-group-item-action">LB102</a>
+          <a href="#" class="list-group-item list-group-item-action">LB103</a>
+         </div>
+    </div>
+     <div class="col-4" style="color: aliceblue;text-align: center;">MEDICAL<br>
+       <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action">MD101</a>
+          <a href="#" class="list-group-item list-group-item-action">MD102</a>
+          <a href="#" class="list-group-item list-group-item-action">MD103</a>
+          <a href="#" class="list-group-item list-group-item-action">MD101</a>
+          <a href="#" class="list-group-item list-group-item-action">MD102</a>
+          <a href="#" class="list-group-item list-group-item-action">MD103</a>
+         </div>
+    </div>
+   </div>
+ </div>
+  <br>
+  <br>
+  <!--For fill up form-->
+  <div class="row">
+    <div class="col-sm-12" style="text-align:center;"><h2>Fill up form</h2></div>
+  </div>
+    <br>
+    <div class="container">
+      <table class="table table-striped">
+         <tbody>
+            <tr>
+               <td colspan="1">
+                  <form class="well form-horizontal">
+                     <fieldset>
+                        <div class="form-group">
+                           <label class="col-md-4 control-label">Problem description</label>
+                           <div class="col-md-8 inputGroupContainer">
+                              <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input id="problemdescription" name="problemdescription" placeholder="Problem Description" class="form-control" required="true" value="" type="text"></div>
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <label class="col-md-4 control-label">Evaluation and Cure</label>
+                           <div class="col-md-8 inputGroupContainer">
+                              <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="evalcure" name="evalcure" placeholder="Evaluation and Cure" class="form-control" required="true" value="" type="text"></div>
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <label class="col-md-4 control-label">Instructions</label>
+                           <div class="col-md-8 inputGroupContainer">
+                              <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="instructions" name="instructions" placeholder="Instructions" class="form-control" required="true" value="" type="text"></div>
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <label class="col-md-4 control-label">Next OPD Date</label>
+                           <div class="col-md-8 inputGroupContainer">
+                              <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="nextOPDdate" name="nextOPDdate" placeholder="Next OPD Date" class="form-control" required="true" value="" type="date"></div>
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <label class="col-md-4 control-label">State/Province/Region</label>
+                           <div class="col-md-8 inputGroupContainer">
+                              <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="state" name="state" placeholder="State/Province/Region" class="form-control" required="true" value="" type="text"></div>
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <label class="col-md-4 control-label">Postal Code/ZIP</label>
+                           <div class="col-md-8 inputGroupContainer">
+                              <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="postcode" name="postcode" placeholder="Postal Code/ZIP" class="form-control" required="true" value="" type="text"></div>
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <label class="col-md-4 control-label">Country</label>
+                           <div class="col-md-8 inputGroupContainer">
+                              <div class="input-group">
+                                 <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
+                                 <select class="selectpicker form-control">
+                                    <option>India</option>
+                                 </select>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <label class="col-md-4 control-label">Email</label>
+                           <div class="col-md-8 inputGroupContainer">
+                              <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span><input id="email" name="email" placeholder="Email" class="form-control" required="true" value="" type="text"></div>
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <label class="col-md-4 control-label">Prescribed medicine</label>
+                           <div class="col-md-8 inputGroupContainer">
+                              <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span><input id="prescribedmed" name="prescribedmed" Prescribed medicine="Phone Number" class="form-control" required="true" value="" type="text" onkeyup="addInput();"></div>
+                           </div>
+                        </div>
+                     </fieldset>
+                  </form>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+  <div class="block"></div>
+    
+  <script>
+        
+var currentindex = 0;
+function addInput(){
+var lastinput = document.getElementById('input'+currentindex);
+if(lastinput.value != ''){
+   var container = document.getElementById('inputcontainer');
+   var newinput = document.createElement('input');
+   currentindex++;
+   newinput.type = "text";
+   newinput.name = 'input'+currentindex;
+   newinput.id = 'input'+currentindex;
+   newinput.onkeyup = addInput;
+   container.appendChild(newinput);
+}
+}
+</script>
+<div class="footer-nav">
+    <p>This is my footer</p>
+</div>
+  
+</body>
+</html>
